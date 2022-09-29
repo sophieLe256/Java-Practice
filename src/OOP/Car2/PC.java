@@ -10,7 +10,6 @@ public class PC {
         this.monitor = monitor;
         this.motherboard = motherboard;
     }
-
     public void powerUp(){
         theCase.pressPowerButton();
         drawLogo();
