@@ -9,6 +9,12 @@ package OOP.Printer;
 // Decide on the scope, whether to use constructors, and anything else you think is needed.
 public class Main {
     public static void main(String[] args) {
-
+        Printer printer = new Printer(50, false);
+        Printer printer1 = new Printer(70, false);
+        System.out.println("Initial page count = " + printer.getPagePrinted());
+        int pagesPrinted = printer.printPages(4);
+        System.out.println("Pages printed was " + pagesPrinted + " new total print count for printer = " + printer.getPagePrinted());
+        printer.printPages(2);
+        System.out.println("Pages printed was " + pagesPrinted + " new total print count for printer = " + printer.getPagePrinted());
     }
 }
