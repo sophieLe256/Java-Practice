@@ -123,8 +123,8 @@ public class BasicConcept {
 //        // 7 8 9
 //
 //
-            // Java program to demonstrate
-            // setScale() method of BigDecimal
+        // Java program to demonstrate
+        // setScale() method of BigDecimal
 //
 //
 //
@@ -193,14 +193,20 @@ public class BasicConcept {
 //        System.out.println(myIntArray[5]);
 
         //Using for loop to display the elements of an array
-        int[] myIntArray = new int [100];
-        for (int i = 0; i < myIntArray.length ; i++){
-            myIntArray[i] = i*10;
-            System.out.println(i);
-        }
-        for(int i = 0; i < myIntArray.length; i++){
-            System.out.println("Element " + i + ", value is " + myIntArray[i]);
-        }
+//        int[] myIntArray = new int[100];
+//        for (int i = 0; i < myIntArray.length; i++) {
+//            myIntArray[i] = i * 10;
+//            System.out.println(i);
+//        }
+//        printArray(myIntArray);
+//    }
+//
+//        public static void printArray(int[] array){
+//            for(int i = 0; i < array.length; i++){
+//            System.out.println("Element " + i + ", value is " + array[i]);
+//        }
+
+
 
     }
 
