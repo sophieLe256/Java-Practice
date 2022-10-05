@@ -1,13 +1,16 @@
 package academy.programming;
 
+import java.util.Random;
 import java.util.Scanner;
 import java.math.RoundingMode;
 import java.math.BigDecimal;
 
 
 public class BasicConcept {
+    private static Scanner scanner = new Scanner(System.in);
+
     public static void main(String[]args) {
-        Scanner in = new Scanner(System.in);
+//        Scanner scanner = new Scanner(System.in);
 
 
 //        int value = 10000;
@@ -206,8 +209,31 @@ public class BasicConcept {
 //            System.out.println("Element " + i + ", value is " + array[i]);
 //        }
 
+        int[] myIntegers = getIntegers(5);
+        for(int i = 0; i < myIntegers.length; i++){
+            System.out.println("Element " + i + ", typed of value was " + myIntegers[i]);
+        }
+        System.out.println("Average is " + getAverage(myIntegers));
 
+    }
 
+    public static int[] getIntegers(int number){
+        System.out.println("Enter " + number + " integer values.\r");
+        int[] values = new int[number];
+
+        for(int i= 0; i< values.length; i++){
+            values[i] = scanner.nextInt();
+        }
+        return values;
+    }
+
+    public static double getAverage(int[] array){
+        double sum = 0;
+        for(int i = 0; i < array.length; i++){
+            sum += array[i];
+        }
+
+        return sum/ array.length;
     }
 
 }
