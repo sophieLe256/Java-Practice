@@ -1,5 +1,6 @@
 package academy.programming;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 import java.math.RoundingMode;
@@ -189,7 +190,7 @@ public class BasicConcept {
 
 
         //Array
-//        myIntArray[5] = 50;
+//        myIntArray[5] = 50; // contains the elements from array[0] to array[49]
 //        int[] myIntArray = {1,2,3,3,5,5,6,7,7,20};
 
 //        double[] myDoubleArray = new double[10];
@@ -209,31 +210,84 @@ public class BasicConcept {
 //            System.out.println("Element " + i + ", value is " + array[i]);
 //        }
 
-        int[] myIntegers = getIntegers(5);
-        for(int i = 0; i < myIntegers.length; i++){
-            System.out.println("Element " + i + ", typed of value was " + myIntegers[i]);
-        }
-        System.out.println("Average is " + getAverage(myIntegers));
+//        int[] myIntegers = getIntegers(5);
+//        for(int i = 0; i < myIntegers.length; i++){
+//            System.out.println("Element " + i + ", typed of value was " + myIntegers[i]);
+//        }
+//        System.out.println("Average is " + getAverage(myIntegers));
+//
+//    }
+//
+//    public static int[] getIntegers(int number){
+//        System.out.println("Enter " + number + " integer values.\r");
+//        int[] values = new int[number];
+//
+//        for(int i= 0; i< values.length; i++){
+//            values[i] = scanner.nextInt();
+//        }
+//        return values;
+//    }
+//
+//    public static double getAverage(int[] array){
+//        double sum = 0;
+//        for(int i = 0; i < array.length; i++){
+//            sum += array[i];
+//        }
+//
+//        return sum/ array.length;
+//    }
 
-    }
+//        /**
+//         * Array
+//         *
+//         * An array is a data structure that allows you to store multiple values of the same type into a single variable
+//         * The default values of numeric array elements are set to zero
+//         *
+//         * Arrays are zero indexed: an array with n elements is indexed from 0 to n-1
+//         *
+//         * If we try to access index that is out of range Java will give us an ArrayIndexOutOfBoundsException, which indicates that the index is out of range in other words out of bounds
+//         *
+//         * To access array elements we use the square braces [and], also known as array access operator.
+//         *
+//         * the new operator or keyword is used to create the array and initialize the array elements to their default values.
+//         *
+//         * For boolean array elements they would be initialized to false
+//         *
+//         * For String or other objects that would be null
+//         *
+//         */
+//
 
-    public static int[] getIntegers(int number){
-        System.out.println("Enter " + number + " integer values.\r");
-        int[] values = new int[number];
+        int myIntValue = 10;
+        int anotherIntValue = myIntValue;
 
-        for(int i= 0; i< values.length; i++){
-            values[i] = scanner.nextInt();
-        }
-        return values;
-    }
+        System.out.println("myIntValue = " + myIntValue);
+        System.out.println("anotherIntValue = " + anotherIntValue );
 
-    public static double getAverage(int[] array){
-        double sum = 0;
-        for(int i = 0; i < array.length; i++){
-            sum += array[i];
-        }
+        anotherIntValue++;
 
-        return sum/ array.length;
+        System.out.println("myIntValue = " + myIntValue);
+        System.out.println("anotherIntValue = " + anotherIntValue );
+
+        //assigned both variable are referencing the same array in memory
+        int[] myIntArray = new int[5];
+        int[] anotherArray = myIntArray;
+
+        System.out.println("myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("anotherIntArray = " + Arrays.toString(anotherArray));
+
+        anotherArray[0] = 1;
+
+
+        //Preference Types Array
+        System.out.println("after change myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("after change anotherIntArray = " + Arrays.toString(anotherArray));
+
+
+
+
+
+
     }
 
 }
