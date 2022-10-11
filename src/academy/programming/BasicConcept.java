@@ -11,6 +11,7 @@ public class BasicConcept {
     private static Scanner scanner = new Scanner(System.in);
 
     public static void main(String[]args) {
+
 //        Scanner scanner = new Scanner(System.in);
 
 
@@ -258,46 +259,50 @@ public class BasicConcept {
 //         */
 //
 
-        int myIntValue = 10;
-        int anotherIntValue = myIntValue;
+//        int myIntValue = 10;
+//        int anotherIntValue = myIntValue;
+//
+//        System.out.println("myIntValue = " + myIntValue);
+//        System.out.println("anotherIntValue = " + anotherIntValue );
+//
+//        anotherIntValue++;
+//
+//        System.out.println("myIntValue = " + myIntValue);
+//        System.out.println("anotherIntValue = " + anotherIntValue );
+//
+//        //assigned both variable are referencing the same array in memory
+//        int[] myIntArray = new int[5];
+//        int[] anotherArray = myIntArray;
+//
+//        System.out.println("myIntArray = " + Arrays.toString(myIntArray)); //[0,0,0,0,0]
+//        System.out.println("anotherIntArray = " + Arrays.toString(anotherArray));//[0,0,0,0,0]
+//
+//        anotherArray[0] = 1;
+//
+//
+//        //Preference Types Array
+//        System.out.println("after change myIntArray = " + Arrays.toString(myIntArray));//[1,0,0,0,0]
+//        System.out.println("after change anotherIntArray = " + Arrays.toString(anotherArray));//[1,0,0,0,0]
+//
+//        anotherArray = new int[] {4,5,6,7,8};
+//        modifyArray(myIntArray);
+//
+//        System.out.println("after modify myIntArray = " + Arrays.toString(myIntArray));//[2,0,0,0,0]
+////        System.out.println("after modify anotherIntArray = " + Arrays.toString(anotherArray));//[2,0,0,0,0]
+//
+//
+//    }
+//
+//    private static void modifyArray(int[] array){
+//        array[0] = 2;
+//
+//        // before calling the method modify array
+//        // de-referencing another array reference
+//        array = new int[] {1,2,3,4,5};
+//    }
 
-        System.out.println("myIntValue = " + myIntValue);
-        System.out.println("anotherIntValue = " + anotherIntValue );
+        System.out.println(Math.floor(2.1));
 
-        anotherIntValue++;
-
-        System.out.println("myIntValue = " + myIntValue);
-        System.out.println("anotherIntValue = " + anotherIntValue );
-
-        //assigned both variable are referencing the same array in memory
-        int[] myIntArray = new int[5];
-        int[] anotherArray = myIntArray;
-
-        System.out.println("myIntArray = " + Arrays.toString(myIntArray)); //[0,0,0,0,0]
-        System.out.println("anotherIntArray = " + Arrays.toString(anotherArray));//[0,0,0,0,0]
-
-        anotherArray[0] = 1;
-
-
-        //Preference Types Array
-        System.out.println("after change myIntArray = " + Arrays.toString(myIntArray));//[1,0,0,0,0]
-        System.out.println("after change anotherIntArray = " + Arrays.toString(anotherArray));//[1,0,0,0,0]
-
-        anotherArray = new int[] {4,5,6,7,8};
-        modifyArray(myIntArray);
-
-        System.out.println("after modify myIntArray = " + Arrays.toString(myIntArray));//[2,0,0,0,0]
-//        System.out.println("after modify anotherIntArray = " + Arrays.toString(anotherArray));//[2,0,0,0,0]
-
-
-    }
-
-    private static void modifyArray(int[] array){
-        array[0] = 2;
-
-        // before calling the method modify array
-        // de-referencing another array reference
-        array = new int[] {1,2,3,4,5};
     }
 
 }
