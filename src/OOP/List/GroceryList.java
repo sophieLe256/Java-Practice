@@ -1,4 +1,4 @@
-package academy.programming;
+package OOP.List;
 
 import java.sql.SQLOutput;
 import java.util.ArrayList;

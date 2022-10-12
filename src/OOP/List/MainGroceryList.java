@@ -1,4 +1,5 @@
-package academy.programming;
+package OOP.List;
+
 import java.util.Scanner;
 public class MainGroceryList {
     private static Scanner scanner = new Scanner(System.in);
@@ -56,12 +57,30 @@ public class MainGroceryList {
 
     public static void modifyItem(){
         System.out.println("Enter item number: ");
-        int itemNums = scanner.nextInt();
+        int itemNum = scanner.nextInt();
         scanner.nextLine();
         System.out.println("Enter replacement items: ");
         String newItems = scanner.nextLine(); // print the nextLine
 
-        groceryList.modifyGroceryItem(itemNums-1, newItems); //deducing 1 number cuz arrayList count from 0, but we want to start to count from 1, so we have to deduce 1 number form the item number that has been entered by the users
+        groceryList.modifyGroceryItem(itemNum-1, newItems); //deducing 1 number cuz arrayList count from 0, but we want to start to count from 1, so we have to deduce 1 number form the item number that has been entered by the users
+
+    }
+
+    public static void removeItem(){
+        System.out.println("Enter item number: ");
+        int itemNum = scanner.nextInt();
+        scanner.nextLine();
+        groceryList.removeGroceryItem(itemNum);
+    }
+
+    public static void searchItem(){
+        System.out.println("Enter item to search for: ");
+        String searchItem = scanner.nextLine();
+        if(groceryList.findItem(searchItem) != null){
+            System.out.println("Found " + searchItem + " in our grocery");
+        } else {
+            System.out.println(searchItem + " is not in the list");
+        }
 
     }
 }
