@@ -4,9 +4,6 @@ import java.sql.SQLOutput;
 import java.util.ArrayList;
 
 public class GroceryList {
-    public static void main(String[] args) {
-
-    }
 //    private int[] myNumbers = new int[50];
     private ArrayList<String> groceryList = new ArrayList<String>();
 
