@@ -20,4 +20,9 @@ public class Customer {
     public String getName() {
         return name;
     }
+
+
+    public ArrayList<Double> getTransaction() {
+        return transactions;
+    }
 }

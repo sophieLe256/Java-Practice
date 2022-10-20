@@ -2,17 +2,21 @@ package academy.programming.Challenge;
 
 import java.util.ArrayList;
 
-public class Branches{
+public class Branch {
     private String name;
     private ArrayList<Customer> customers;
 
-    public Branches(String name){
+    public Branch(String name){
         this.name = name;
         this.customers = new ArrayList<Customer>();
     }
 
     public String getName() {
         return name;
+    }
+
+    public ArrayList<Customer> getCustomers() {
+        return customers;
     }
 
     public boolean newCustomer(String customerName, double initialAmount){
