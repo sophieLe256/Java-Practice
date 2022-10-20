@@ -38,8 +38,8 @@ public class Main {
         // add an object type IntClass with value 54
         ArrayList<IntClass> intClassArrayList = new ArrayList<IntClass>();
         intClassArrayList.add(new IntClass(54));
-        Integer integer = new Integer(54);
-        Double doubleValue = new Double(12.25);
+//        Integer integer = new Integer(54);
+//        Double doubleValue = new Double(12.25);
 
         ArrayList<Integer> intArrayList = new ArrayList<Integer>();
         for(int i = 0; i<= 10; i++){
@@ -47,6 +47,20 @@ public class Main {
         }
         for(int i = 0; i<= 10; i++){
             System.out.println(i + " --> " + intArrayList.get(i).intValue()); //intValur which os a value converts it back from Integer from the Integer class back into an int type to a primitive type
+        }
+
+        //method boxing and unboxing
+        Integer myIntValue = 56; //Integer.valueOf(56); (only integer)
+        int myInt = myIntValue.intValue(); //myInt.intValue();
+
+        ArrayList<Double> myDoubleValues = new ArrayList<Double>();
+        for(double dbl = 0.0; dbl <= 10.0 ; dbl += 0.5){
+            myDoubleValues.add(Double.valueOf(dbl));
+        }
+
+        for(int i = 0; i < myDoubleValues.size(); i++){
+            double value = myDoubleValues.get(i).doubleValue();
+            System.out.println(i + " --> " + value);
         }
 
     }
