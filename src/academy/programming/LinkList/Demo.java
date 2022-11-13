@@ -105,13 +105,13 @@ public class Demo {
                         if(listIterator.hasNext()) {
                             listIterator.next();
                         }
-                        goingForward = true;
+                        goingForward = true; // set boolean to make sure it is going to the right way.
                     }
                     if(listIterator.hasNext()) {
                         System.out.println("Now visiting " + listIterator.next());
                     } else {
                         System.out.println("Reached the end of the list");
-                        goingForward = false;
+                        goingForward = false; // if it is false, it will never go to backward
                     }
                     break;
 
@@ -126,7 +126,7 @@ public class Demo {
                         System.out.println("Now visiting " + listIterator.previous());
                     } else {
                         System.out.println("We are at the start of the list");
-                        goingForward = true;
+                        goingForward = true; //
                     }
                     break;
 
